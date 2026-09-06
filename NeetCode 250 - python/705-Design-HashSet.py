@@ -9,14 +9,14 @@ class MyHashSet:
 
     def remove(self, key: int) -> None:
         myHashSet = self.myHashSet
-        while self.contains(key):
+        x = self.myHashSet.count(key)
+        while x > 0:    
             myHashSet.remove(key)
+            x -= 1
 
     def contains(self, key: int) -> bool:
         x = self.myHashSet.count(key)
-        if x > 0:
-            return True
-        return False
+        return bool(x)
 
 
 # Your MyHashSet object will be instantiated and called as such:
