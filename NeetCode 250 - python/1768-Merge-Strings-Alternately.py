@@ -3,7 +3,7 @@ class Solution:
         w1 = list(word1)
         w2 = list(word2)
         rs = ""
-        while len(w1) > 0 or len(w2) > 0:
+        for i in range(len(word1) + len(word2)):
             if len(w1) != 0:
                 rs += w1.pop(0)
             if len(w2) != 0:
